@@ -1,0 +1,184 @@
+Codebook for POLISCI 150A Congressional Forecasting Data Set
+
+
+Outcomes
+dem.cand.vs: Democratic two-party vote share in congressional races. 
+
+
+Cycle, state, and district identifiers
+cycle: Election cycle
+state: Two-letter state code
+district: congressional district ([cycle]_[st]_[district number]). (Note: the distcyc variable is identical.)
+
+
+Candidate Name/IDs
+dem.name: Name of the Democratic candidate.
+rep.name: Name of the Republican candidate.
+dem.icpsr: Democratic candidate ICPSR ID.
+rep.icpsr: Republican candidate ICPSR ID.
+dem.rid: Democratic candidate DIME ID with cycle.  ([dime_rid]_[cycle])
+rep.rid: Republican candidate DIME ID with cycle. ([dime_rid]_[cycle])
+dem.rid.static: Democratic candidate DIME ID.
+rep.rid.static: Republican candidate DIME ID. 
+dem.fec.candid: Democratic candidate FEC ID.
+rep.fec.candid: Republican candidate FEC ID.
+
+
+Candidate Characteristics/Incumbency Status 
+inc.status: (I: incumbent) (O: open seat) (C: challenger).
+dem.inc: Democratic candidate is incumbent.
+rep.inc: Republican candidate is incumbent.
+dem.female: (male:0) (female:1) 
+rep.female:  (male:0) (female:1) 
+
+
+District-level variables
+dist.pres.vs: district-level percentage of the two-party vote share won by the Democratic presidential nominee in the most recent presidential election cycle. Four digit number that indicates the two-year election cycle during which the contribution was recorded.
+dem.num.prim.opps: Number candidates competing in primary election in the district (Democrat).
+rep.num.prim.opps: Number candidates competing in primary election in the district (Republican).
+Total_Naturalized: % of district population that are naturalized citizens
+tpc: presence or absence of a third party candidate
+cand.lib: presence or absence of libertarian candidate
+cand.gre: presence or absence of green party candidate 
+cand.ind: presence or absence of independent candidate
+vetper: percentage of veteran population in the district
+population: census data for population of each district dating back to 2010
+percentFemale; Estimate; White alone, not Hispanic or Latino - Bachelor’s Degree or higher: in “New Variable” dataset. Percentage of college educated white females in each district
+top2: Top two primary system used in state. 
+
+
+Donor Details
+dem.n.distinct.donors: Number of district donors (included in the scaling model) that gave to the Democratic candidate.
+rep.n.distinct.donors: Number of district donors (included in the scaling model) that gave to the Republican candidate.
+
+
+Fundraising
+total.dem: total $ amount raised by the Democratic candidate.
+total.rep: total $ amount raised by the Republican candidate.
+total.pac.dem: total $ amount raised from PACs by the Democratic candidate.
+total.pac.rep: total $ amount raised from PACs by the Republican candidate.
+total.pc.dem: total $ amount raised from party committees by the Democratic candidate.
+total.pc.rep: total $ amount raised from party committees by the Republican candidate.
+total.cc.dem: total $ amount from self-funding by the Democratic candidate.
+total.cc.rep: total $ amount from self-funding by the Republican candidate.
+total.unitemized.dem: total $ amount raised by the Democratic candidate from small donors (contributions under $200). 
+total.unitemized.rep: total $ amount raised by the Republican candidate from small donors (contributions under $200). 
+dem.q1: Democratic candidate's fundraising total during Q1 (Jan-March, off year).
+dem.q2: Democratic candidate's fundraising total during Q2 (Apr-June, off year).
+dem.q3: Democratic candidate's fundraising total during Q3 (Jul-Sep, off year).
+dem.q4: Democratic candidate's fundraising total during Q4 (Oct.-Dec., off year).
+dem.q5: Democratic candidate's fundraising total during Q5 (Jan-Mar, election year).
+dem.q6: Democratic candidate's fundraising total during Q6 (Apr-June, election year).
+dem.q7: Democratic candidate's fundraising total during Q7 (Jul-Sep, election year).
+dem.q8: Democratic candidate's fundraising total during Q8 (Oct.-Nov., election year).
+rep.q1: Republican candidate's fundraising total during Q1 (Jan-Mar off year).
+rep.q2: Republican candidate's fundraising total during Q2 (Apr-June, off year).
+rep.q3: Republican candidate's fundraising total during Q3 (Jul-Sep, off year)
+rep.q4: Republican candidate's fundraising total during Q4. (Oct.-Dec., off year).
+rep.q5: Republican candidate's fundraising total during Q5 (Jan-Mar, election year).
+rep.q6: Republican candidate's fundraising total during Q6 (Apr-June, election year).
+rep.q7: Republican candidate's fundraising total during Q7  (Jul-Sep, election year).
+rep.q8: Republican candidate's fundraising total during Q8 (Oct.-Nov., election year).
+dem.num.donors.q1: Democratic candidate's fundraising total during Q1 (Jan-March, off year).
+dem.num.donors.q2: Democratic candidate's total number of donors during Q2 (Apr-June, off year).
+dem.num.donors.q3: Democratic candidate's total number of donors during Q3 (Jul-Sep, off year).
+dem.num.donors.q4: Democratic candidate's total number of donors during Q4 (Oct.-Dec., off year).
+dem.num.donors.q5: Democratic candidate's total number of donors during Q5 (Jan-Mar, election year).
+dem.num.donors.q6: Democratic candidate's total number of donors during Q6 (Apr-June, election year).
+dem.num.donors.q7: Democratic candidate's total number of donors during Q7 (Jul-Sep, election year).
+dem.num.donors.q8: Democratic candidate's total number of donors during Q8 (Oct.-Nov., election year).
+rep.num.donors.q1: Republican candidate's total number of donors during Q1 (Jan-Mar off year).
+rep.num.donors.q2: Republican candidate's total number of donors during Q2 (Apr-June, off year).
+rep.num.donors.q3: Republican candidate's total number of donors during Q3 (Jul-Sep, off year)
+rep.num.donors.q4: Republican candidate's total number of donors during Q4. (Oct.-Dec., off year).
+rep.num.donors.q5: Republican candidate's total number of donors during Q5 (Jan-Mar, election year).
+rep.num.donors.q6: Republican candidate's total number of donors during Q6 (Apr-June, election year).
+rep.num.donors.q7: Republican candidate's total number of donors during Q7  (Jul-Sep, election year).
+rep.num.donors.q8: Republican candidate's total number of donors during Q8 (Oct.-Nov., election year).
+log.tot.diff: log difference in total fundraising between candidates, calculated as log(total.dem+1) - log(total.rep+1)
+log.pac.diff: log difference in total fundraising from PACs between candidates, calculated as log(total.pac.dem+1) - log(total.pac.rep+1)
+dem.cash.on.hand.bop: Democratic candidate’s cash on hand at beginning of October reporting period.  
+rep.cash.on.hand.bop: Republican candidate’s cash on hand at beginning of October reporting period.
+dem.cash.on.hand.eop: Democratic candidate’s cash on hand at end of October reporting period (i.e. the two weeks before the election).
+rep.cash.on.hand.eop: Republican candidate’s cash on hand at end of October reporting period (i.e. the two weeks before the election).
+dem.oct.qrt.tot.receipts: Fundraising totals for the first three weeks of October (Democrat). 
+rep.oct.qrt.tot.receipts: Fundraising totals for the first three weeks of October (Republican). 
+
+
+Spending
+total.disbursements.dem: total $ amount spent by Democratic candidate.
+total.disbursements.rep: total $ amount spent by Republican candidate.
+dem.disb.advertising: total $ spent by candidate on advertising (Democrat).
+rep.disb.advertising: total $ spent by candidate on advertising (Republican).
+dem.disb.salarypayroll: total $ spent by campaign on salary/payroll (Democrat).
+rep.disb.salarypayroll: total $ spent by campaign on salary/payroll (Republican).
+spare.cash.dem: Spare cash going into last three months of campaign (Democrat).
+spare.cash.rep:  Spare cash going into last three months of campaign (Republican).
+dem.oct.qrt.tot.disb: Spending totals for the first three weeks of October (Democrat). 
+dem.oct.qrt.tot.disb: Spending totals for the first three weeks of October (Republican). 
+
+
+Candidate Ideology
+dem.ip: candidate DIME ideology score (Democrat). Note: candidates who have 
+rep.ip: candidate DIME ideology score (Republican).
+dem.ip.imputed: was the DIME ideology score for the Democratic candidate missing and set to the party-cycle average? (1=yes, 0=no). 
+repip.imputed: was the DIME ideology score for the Republican candidate missing and set to the party-cycle average? (1=yes, 0=no). 
+midpoint: midpoint between dem.ip and rep.ip ((dem.ip + rep.ip)/2).
+dem.ip.party.cycle.avg: Average DIME ideology of Democratic candidates running in election cycle. 
+rep.ip.party.cycle.avg: Average DIME ideology of Democratic candidates running in election cycle. 
+
+
+Electoral Environment
+maj.party.dem.h: Democratic majority in the House.
+maj.party.dem.s: Democratic majority in the Senate.
+dem.president: Democratic President.
+dem.seat.share: Number of seats held by the Democrats in the House during the current Congress.
+midterm: Indicator for midterm election cycle.
+gdp.growth: Average GDP growth rate in election year.
+generic.ballot: Democratic standing in the congressional generic ballot. 
+avg.donor.in.cycle: Average DIME score (ideology) of all donors who gave during the election cycle.  
+median.donor.in.cycle:  Median DIME score (ideology) of all donors who gave during the election cycle. 
+avg.donor.in.cycle.gave.to.noninc: Average DIME score (ideology) of all donors who gave to non-incumbent candidates during the election cycle. 
+median.donor.in.cycle.gave.to.noninc: Median DIME score (ideology) of all donors who gave to non-incumbent candidates during the election cycle. 
+w.mean: This variable is similar to avg.donor.in.cycle and median.donor.in.cycle but is calculated as the weighted average of donor ideology by log donation amounts. 
+num.cands.in.cycle.dem: The number of Democratic candidates that ran for the House and filed with the FEC.
+num.cands.in.cycle.rep: The number of Republican candidates that ran for the House and filed with the FEC.
+num.uncontested.dem: The number of districts where the Democratic Party did not field a candidate. 
+num.uncontested.rep: The number of districts where the Republican Party did not field a candidate. 
+num.dem.donors: Total number of donors who gave to Democratic candidates in the election cycle.
+num.rep.donors: Total number of donors who gave to Republican candidates in the election cycle.
+num.dem.donors.to.ni: Total number of donors who gave to Democratic non-incumbents in the election cycle.
+num.rep.donors.to.ni: Total number of donors who gave to Republican non-incumbents in the election cycle.
+pct.bipartisan: percentage of individual donors who gave to both parties.
+
+
+Donors: Picking Winners in Past elections
+donors.prev.success.rate.dem: Percentage of past donations by individual donors who gave to the Democratic candidate that went to winning candidates. A higher score indicates that donors that gave to the candidate tended to pick winning candidates in the past. 
+donors.prev.success.rate.rep: Percentage of past donations by individual donors who gave to the Republican candidate that went to winning candidates. A higher score indicates that donors that gave to the candidate tended to pick winning candidates in the past. 
+pacs.prev.success.rate.dem: Percentage of past donations by PACs that gave to the Democratic candidate that went to winning candidates. A higher score indicates that donors that gave to the candidate tended to pick winning candidates in the past. 
+pacs.prev.success.rate.rep: Percentage of past donations by PACs that gave to the Republican candidate that went to winning candidates. A higher score indicates that donors that gave to the candidate tended to pick winning candidates in the past. 
+donors.prev.avg.dvs.dem: An aggregate statistic that captures the average vote shares of candidates that the Democratic candidate’s donors gave to in previous election cycles. 
+donors.prev.avg.dvs.rep: An aggregate statistic that captures the average vote shares of candidates that the Republican candidate’s donors gave to in previous election cycles. 
+pacs.prev.avg.dvs.dem: An aggregate statistic that captures the average vote shares of candidates that the Democratic candidate’s PAC donors gave to in previous election cycles. 
+pacs.prev.avg.dvs.rep: An aggregate statistic that captures the average vote shares of candidates that the Republican candidate’s PAC donors gave to in previous election cycles.
+
+Congressional District Demographics
+cd.median.hh.income: Median household income in congressional district.
+cd.mean.hh.income: Mean household income in congressional district.
+cd.unemployed.pct: Unemployment rate in congressional district.
+cd.college.ba.pct: Percentage of adults 25 and older in congressional district with four-year college degrees. 
+cd.asian.pct: Percentage Asian American and Pacific Islander. 
+cd.black.pct:  Percent Black or African American.
+cd.latino.pct: Percent Latino.
+cd.white.pct: Percent White. 
+
+Independent Expenditures
+tot.ie.support.rep: Total independent expenditures (i.e. outside spending from Super PACs and other groups) spent to support the Republican candidate. 
+tot.ie.oppose.rep: Total independent expenditures (i.e. outside spending from Super PACs and other groups) spent to oppose the Democratic candidate. This is money spent on behalf to the Republican candidate, usually on negative advertising directed at their opponent.  
+tot.ie.support.rep: Total independent expenditures (i.e. outside spending from Super PACs and other groups) spent to support the Republican candidate. 
+tot.ie.oppose.rep: Total independent expenditures (i.e. outside spending from Super PACs and other groups) spent to oppose the Republican candidate. This is money spent on behalf to the Democratic candidate, usually on negative advertising directed at their opponent.  
+
+Primary Voting
+total.prim.votes.cast.dem: The total number of votes cast for Democrats nationwide in the primary elections for the election cycle. 
+total.prim.votes.cast.rep: The total number of votes cast for Democrats nationwide in the primary elections for the election cycle. 
+dem.tot.prim.prop:  This variable sums the total number of votes received by candidates from each party during the primaries and then calculates the proportion of these votes going to Democrats. It is calculated as (total.prim.votes.cast.dem/(total.prim.votes.cast.dem+total.prim.votes.cast.rep)).
